@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+
+    <!-- jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.2.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    
+    <!-- Moment JS link-->
+    <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="./asset/CSS/style.css">
+
+
+</head>
+<body id="backgroundIMG">
+
+    <div class="container p-5 text-light">
+
+        <br>
+
+        <div class="jumbotron text-dark">
+            <h1 class="text-center">Train Tracker</h1>
+            <h5 class="text-center">Choo choo chee chee...</h5>
+        </div>
+
+        <table class="table bg-secondary">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="showAll"></tbody>
+        </table>
+
+
+        <div>
+             <h3 class="panel-title">Add Train</h3>
+        </div>
+        
+        <!-- Add Train Form -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="train-name">Train Name</label>
+                                <input class="form-control" id="trainName" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input class="form-control" id="destination" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train-time">First Train Time (HH:mm - military time)</label>
+                                <input class="form-control" id="firstTrain" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="train-frequency">Frequency (min)</label>
+                                <input class="form-control" id="interval" type="number">
+                            </div>
+                            <button class="btn btn-info" id="newTrain" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Link to JS -->
+    <script src="asset/app.js"></script>
+
+
+</body>
+
+</html>

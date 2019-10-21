@@ -1,0 +1,12 @@
+#backgroundIMG {
+    background-image:  url("../images/train-tracks-photo.jpg");
+    background-attachment: fixed
+    
+};
+
+
+#seeThrough {
+   
+    opacity: 0.9;
+
+}
