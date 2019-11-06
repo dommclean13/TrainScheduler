@@ -1,4 +1,5 @@
     // Initialize Firebase
+    $(document).ready(function () {
     var config = {
       apiKey: "AIzaSyBZFb6PI6bOxBfG0dv4ttHpdZ__MQngzKc",
       authDomain: "traintracker-b208f.firebaseapp.com",
@@ -18,7 +19,6 @@
     var freq
 
 
-    $(document).ready(function () {
 
     var database = firebase.database();
 
